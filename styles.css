@@ -7,12 +7,17 @@ html {
     padding: 0;
 }
 
+body {
+    background-color: rgb(228, 228, 228);
+}
 
 * {
     box-sizing: border-box;
 }
 
-*{font-size:100%;}
+* {
+    font-size: 100%;
+}
 
 
 
@@ -27,8 +32,8 @@ html {
 }
 
 
-.child {
-
+#formHeader {
+    padding-left: 20px;
 }
 
 #left {
@@ -36,39 +41,66 @@ html {
     background-image: url(leaves.avif);
     background-size: cover;
     background-repeat: no-repeat;
-    display:flex;
-    flex-direction:column;
-    padding-top:10%;
-    align-items:center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    align-items: center;
 }
 
-#odinLogo{
+#odinLogo {
     background-image: url(odin.png);
-    height:70%;
-    width:50%;
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:100%;
+    height: 70%;
+    width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
 }
 
-#slogan{
-    color:white;
-    font-size:3rem;
-    width:50%;
-    position:relative;
-    font-family:"Norse"; src: url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot"); src: url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff") format("woff"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.svg#Norse") format("svg"); }
-    
+#slogan {
+    color: white;
+    font-size: 3rem;
+    width: 50%;
+    position: relative;
+    font-family: "Norse";
+    src: url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot");
+    src: url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff") format("woff"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.svg#Norse") format("svg");
+}
 
-    
+
+input:focus {
+    outline: none !important;
+    border: 1px solid blue;
+    box-shadow: 2px 2px 5px 1px rgba(127, 127, 200, 0.5);
+
+}
 
 
-#sloganHolder{
-display:flex;
-align-items:center;
-height:clamp(4rem, 8rem, 10rem);
-width:100%;
-position:relative;
-background-color: rgba(0, 0, 0, 0.5);
+.error {
+    outline: none !important;
+    border: 1px solid rgb(204, 0, 0) !important;
+    box-shadow: 2px 2px 5px 1px rgba(200, 127, 127, 0.5) !important;
+
+}
+
+.passAccept {
+    outline: none !important;
+    border: 1px solid rgb(0, 200, 0) !important;
+    box-shadow: 2px 2px 5px 1px rgba(127, 200, 127, 0.5) !important;
+}
+
+.requiredField {
+    outline: none !important;
+    border: 1px solid yellow !important;
+    box-shadow: 2px 2px 5px 1px rgba(200, 200, 0, 0.5);
+}
+
+#sloganHolder {
+    display: flex;
+    align-items: center;
+    height: clamp(4rem, 8rem, 10rem);
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -86,40 +118,41 @@ background-color: rgba(0, 0, 0, 0.5);
 
 #createAcc {
     margin-right: auto;
-    margin-left:auto;
+    margin-left: auto;
     background-color: rgb(102, 122, 83);
     color: white;
     text-align: center;
     font-size: 1em;
     border: 2px rgb(88, 102, 75) solid;
     border-radius: 5px;
-    width:clamp(25%, 30%, 35%);
-   
+    width: clamp(25%, 30%, 35%);
+
 }
 
 
 
 .content {
-    
+
     background-color: White;
-  
-    box-shadow: 0px 2px 5px 1px grey;;
+
+    box-shadow: 0px 2px 5px 1px grey;
+    ;
 
 }
 
 
 .text {
     padding-left: 5%;
-    font-weight:bold;
-    font-size:20px;
+    font-weight: bold;
+    font-size: 20px;
     word-wrap: break-word;
-    width:75%;
+    width: 75%;
 }
 
 .formContainer {
     padding-left: 2%;
     overflow-x: auto;
-    
+
 }
 
 
@@ -127,7 +160,7 @@ background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: row;
     gap: 2%;
-    
+
 }
 
 .rightFields {
@@ -137,12 +170,14 @@ background-color: rgba(0, 0, 0, 0.5);
 
 }
 
+
+
 .formField {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom:2%;
-    
+    padding-bottom: 2%;
+
 }
 
 input {
@@ -153,12 +188,12 @@ input {
     border-radius: 5px;
     border-color: white;
     border-width: 1px;
-    width:100%;
+    width: 100%;
 }
 
 .bottomPanel {
     padding-left: 5%;
- 
+
 }
 
 
@@ -189,108 +224,112 @@ a:active {
 @media only screen and (max-width:40rem) {
 
 
-    .content{
-        text-align:center;
-        width:80vw;
-        margin-left:auto;
-        margin-right:auto;
+    .content {
+        text-align: center;
+        width: 80vw;
+
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .container{
-        flex-direction:column;
+    .container {
+        display: block;
+        flex-direction: column;
+        height: 100%;
     }
 
     #left {
-        
-       
-    
-        flex:0 1 10%;
-       
+
+        flex: 0 1 10%;
+
     }
 
-    #sloganHolder{
-        display:flex;
-        flex-direction:row;
-      
-        bottom:1.7rem;
-        
-        height:clamp(1.5rem, 2rem, 2.5rem);
-        width:100%;
-        position:relative;
+    #sloganHolder {
+        display: flex;
+        flex-direction: row;
+
+        bottom: 1rem;
+
+        height: clamp(1.5rem, 2rem, 2.5rem);
+        width: 100%;
+        position: relative;
         background-color: rgba(0, 0, 0, 0.5);
 
-        
-        }
 
-        #odinLogo{
-            height:2rem;
-        }
+    }
 
-        #slogan{
-            font-size:1rem;
-        }
-        .formContainer{
-            width:50%;
-            margin-left:auto;
-            margin-right:auto;
-            overflow-x:visible;
-            font-size:0.7em;
-            
-        }
-        
-        .leftFields{
-           flex-direction:column;
-        }
-        .rightFields{
-            flex-direction:column;
-        }
+    #odinLogo {
+        height: 2rem;
+    }
 
-        
-.formField {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom:2%;
-    margin-left:auto;
-    margin-right:auto;
+    #slogan {
+        font-size: 1rem;
+    }
 
-    
-    
+    .formContainer {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: visible;
+        font-size: 0.7em;
+
+    }
+
+    .leftFields {
+        flex-direction: column;
+    }
+
+    .rightFields {
+        flex-direction: column;
+    }
+
+
+
+    .formField {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .formField input {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .text {
+        padding: 5%;
+        font-weight: bold;
+        font-size: 20px;
+        word-wrap: break-word;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+
+    .bottomPanel {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+
+    #createAcc {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+
+
 }
-
-.formField input{
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-}
-
-.text {
-    padding:5%;
-    font-weight:bold;
-    font-size:20px;
-    word-wrap: break-word;
-    width:100%;
-    margin-left:auto;
-    margin-right:auto;
-    text-align:center;
-}
-
-
-.bottomPanel{
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    
-}
-
-#createAcc{
-    margin-left:auto;
-    margin-right:auto;
-    width:50%;
-}
-}
-

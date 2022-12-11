@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="//db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse" rel="stylesheet"
+        type="text/css" />
     <title>Document</title>
 </head>
 
@@ -21,7 +22,7 @@
 
         </div>
 
-        <div id="right" class="child">
+        <div id="right">
             <div class="text">
                 <p> This is not a real online service! You <em>know</em> you need something like this in your life to
                     help you
@@ -31,8 +32,8 @@
                 <p>You know you want to.</p>
             </div>
             <div class="content">
-                <h3>Let's do this!</h3>
-                <form>
+                <h3 id="formHeader">Let's do this!</h3>
+                <form autocomplete="off" onsubmit="return false">
                     <div class="formContainer">
                         <div class="leftFields">
                             <div class="formField">
@@ -47,7 +48,8 @@
 
                             <div class="formField">
                                 <label for="password">*Password</label>
-                                <input name="password" id="password" type="text" placeholder="Password" required>
+                                <input name="password" id="password" class="passwords" type="text"
+                                    placeholder="Password" required>
                             </div>
                         </div>
 
@@ -64,15 +66,15 @@
 
                             <div class="formField">
                                 <label for="confirmPass">*Confirm Password</label>
-                                <input name="confirmPass" id="confirmPass" type="text" placeholder="Confirm Password"
-                                    required>
+                                <input name="confirmPass" id="confirmPass" class="passwords" type="text"
+                                    placeholder="Confirm Password" required>
                             </div>
-                            
+
                         </div>
 
 
                     </div>
-           
+
 
 
 
@@ -80,19 +82,19 @@
             </div>
 
             <div class="bottomPanel">
-                <form>
-                   
-                <input id="createAcc" type="submit" value="Create Account"/>
-             
-            </form>
+
+                <input id="createAcc" type="submit" value="Create Account" />
+
                 <h4>Already have an account? <a target="#" href="index.html">Log in</a></h4>
 
             </div>
-        </form>
+            </form>
         </div>
 
     </div>
 
 </body>
+
+<script src="scripts.js"></script>
 
 </html>
